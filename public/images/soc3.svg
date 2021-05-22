@@ -1,0 +1,15 @@
+<?xml version="1.0" ?><svg id="Layer_1" style="enable-background:new 0 0 128 128;" version="1.1" viewBox="0 0 128 128" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style type="text/css">
+	.st0{fill:#FF5050;}
+	.st1{fill:#FFFFFF;}
+	.st2{fill:#9B0270;}
+	.st3{fill:#FFD952;}
+	.st4{fill:#FF9D00;}
+	.st5{fill:#DFE8F4;}
+	.st6{fill:#52EFBB;}
+	.st7{fill:#33BC8B;}
+	.st8{fill:#0795FF;}
+	.st9{fill:#500599;}
+	.st10{fill:#4D28A8;}
+	.st11{fill:#35DC86;}
+	.st12{fill:#27A88F;}
+</style><g><path class="st3" d="M64,127C29.2,127,1,98.8,1,64S29.2,1,64,1s63,28.2,63,63l-23,44L64,127z"/><path class="st4" d="M117,64c0,29.2-23.8,53-53,53v10c34.8,0,63-28.2,63-63H117z"/><path class="st0" d="M37.6,94C29.2,86.7,24,76,24,64h10l30,3l30-3h10c0,12-5.2,22.7-13.5,30"/><path class="st2" d="M90.4,94C83.4,87.8,74.1,84,64,84s-19.4,3.8-26.4,10L64,97L90.4,94z"/><rect class="st1" height="10" width="60" x="34" y="64"/><rect class="st1" height="10" width="30" x="24" y="44"/><path class="st1" d="M90.4,94H37.6c7.1,6.2,16.3,10,26.4,10S83.4,100.2,90.4,94z"/><circle class="st1" cx="84" cy="44" r="10"/></g></svg>
