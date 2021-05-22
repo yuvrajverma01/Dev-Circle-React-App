@@ -4,6 +4,7 @@ It's a social media app made with React.js + Redux + Styled Components and integ
 
 ## About This Project
 
+(Click on the image below for live demo) <br></br>
 [![Screen Shot](/public/screenshot.png)](https://devcircleapp.web.app/)
 
 This is a social media application made in a very limited timeframe as a school project. It is capable to work exactly like [Linkedin](https://in.linkedin.com/) but except it only posts and retrieve your shared images or videos. Limited time frame :shipit:. But in order to understand a little about React.js, Redux and Styled Components - I made this project as to teach myself about these technologies. Why you should always take an easy or an intermediate project to learn new technologies?
