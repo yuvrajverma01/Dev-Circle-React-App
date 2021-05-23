@@ -1,13 +1,13 @@
 # Dev Circle Web App
 
-It's a social media app made with React.js + Redux + Styled Components and integrating it with Firebase. This project was Rafeh Qazi (Clever Programmer)
+It's a social media app made with React.js + Redux + Styled Components and integrating it with Firebase. This project was made with the help of Rafeh Qazi (Clever Programmer)
 
 ## About This Project
 
 (Click on the image below for live demo) <br></br>
 [![Screen Shot](/public/screenshot.png)](https://devcircleapp.web.app/)
 
-This is a social media application made in a very limited timeframe as a school project. It is capable to work exactly like [Linkedin](https://in.linkedin.com/) but except it only posts and retrieve your shared images or videos. Limited time frame :shipit:. But in order to understand a little about React.js, Redux and Styled Components - I made this project as to teach myself about these technologies. Why you should always take an easy or an intermediate project to learn new technologies?
+This is a social media application made in a very limited time frame as a school project. It is capable to work exactly like [Linkedin](https://in.linkedin.com/) but except it only posts and retrieve your shared images or videos. Limited time frame :shipit:. But in order to understand a little about React.js, Redux and Styled Components - I made this project as to teach myself about these technologies. Why you should always take an easy or an intermediate project to learn new technologies?
 
 Here's why:
 
@@ -15,9 +15,9 @@ Here's why:
 - You shouldn't be iterating over the notes over and over again just to pass an exam from your school.
 - You will gain an immense knowledge just by applying your knowledge into something rather than keeping it in your brain until newer technologies arrive.
 
-This project was taught by the [Clever Programmer's Team](https://www.cleverprogrammer.com/) on [YouTube](https://www.youtube.com/channel/UCqrILQNl5Ed9Dz6CGMyvMTQ). The way he creates his project repos incomplete so that the actual learning takes by implementing rather than copying is truly remarkable. :blush:
+This project was taught by the [Clever Programmer's Team](https://www.cleverprogrammer.com/) on [YouTube](https://www.youtube.com/channel/UCqrILQNl5Ed9Dz6CGMyvMTQ). The way he creates his project repos (they are incomplete) so that the actual learning takes by implementing rather than copying is truly remarkable. :blush:
 
-###Built With
+### Built With
 
 This section lists all the technologies that I used to built this project. Leave any add-ons/plugins for the acknowledgements section.
 
