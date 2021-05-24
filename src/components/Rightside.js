@@ -39,13 +39,46 @@ const Rightside = (props) => {
       </FollowCard>
 
       <CommunityCard>
-          <a><span>Podcast Channels <img src="/images/spotify.svg"/></span></a>
-          <a><span>Elon Musk Channel</span></a>
-          <a><span>Grant Ford Channel</span></a>
-          <a><span>Gary Vaynerchuck Channel</span></a>
-          <a><span>Matt D'Avella Channel</span></a>
-          <a><span>Kamal Hussain Channel</span></a>
-          <a><span>Jeevy Boi Channel</span></a>
+          <a>
+            <span>Podcast Channels <img src="/images/spotify.svg"/>
+            </span>
+          </a>
+          <a>
+            <span>Marques Browniee Channel</span>
+			<PodcastCard1>
+				<ReactPlayer width={'100%'} height={'100%'} url={`https://www.youtube.com/user/marquesbrownlee`} />
+			</PodcastCard1>
+          </a>
+		  <a>
+            <span>Gary VaynerChuck Channel</span>
+			<PodcastCard2>
+				<ReactPlayer width={'100%'} height={'100%'} url={`https://www.youtube.com/user/GaryVaynerchuk`} />
+			</PodcastCard2>
+          </a>
+		  <a>
+            <span>Grant Cardone Channel</span>
+			<PodcastCard3>
+				<ReactPlayer width={'100%'} height={'100%'} url={`https://www.youtube.com/user/GrantCardone`} />
+			</PodcastCard3>
+          </a>
+		  <a>
+            <span>Elliot Choy Channel</span>
+			<PodcastCard4>
+				<ReactPlayer width={'100%'} height={'100%'} url={`https://www.youtube.com/user/ELLIOTCHOY`} />
+			</PodcastCard4>
+          </a>
+		  <a>
+            <span>Unbox Therapy Channel</span>
+			<PodcastCard5>
+				<ReactPlayer width={'100%'} height={'100%'} url={`https://www.youtube.com/user/unboxtherapy`} />
+			</PodcastCard5>
+          </a>
+		  <a>
+            <span>Matt Davella Channel</span>
+			<PodcastCard6>
+				<ReactPlayer width={'100%'} height={'100%'} url={`https://www.youtube.com/user/blackboxfilmcompany`} />
+			</PodcastCard6>
+          </a>
       </CommunityCard>
 
       <BannerCard>
@@ -140,6 +173,40 @@ const BannerCard = styled(FollowCard)`
 	}
 `;
 
+const PodcastCard1 = styled.div`
+  text-align: center;
+  overflow: hidden;
+  margin-bottom: 8px;
+  margin-top: 8px;
+  background-color: #fff;
+  border-radius: 5px;
+  position: relative;
+  border: none;
+  box-shadow: 0 0 0 1px rgb(0 0 0 / 15%), 0 0 0 rgb(0 0 0 / 20%);
+  padding: 6px;
+  display: none;
+`;
+
+const PodcastCard2 = styled(PodcastCard1)`
+
+`;
+
+const PodcastCard3 = styled(PodcastCard1)`
+
+`;
+
+const PodcastCard4 = styled(PodcastCard1)`
+
+`;
+
+const PodcastCard5 = styled(PodcastCard1)`
+
+`;
+
+const PodcastCard6 = styled(PodcastCard1)`
+
+`;
+
 const CommunityCard = styled.div`
     padding: 8px 0 0;
     text-align: left;
@@ -157,6 +224,8 @@ const CommunityCard = styled.div`
         color: black;
         padding: 4px 12px 10px 12px;
         font-size: 12px;
+        transition: transform 300ms;
+        cursor: default;
         &:hover {
             color: #0a66c2;
         }
@@ -172,9 +241,9 @@ const CommunityCard = styled.div`
             border-bottom: 1px solid #d6cec2;
             margin-bottom: 9px;
             margin-top: -9px;
-			font-size: 16px;
-			color: rgba(0, 0, 0, 0.6);
-			font-weight: 600;
+            font-size: 16px;
+            color: rgba(0, 0, 0, 0.6);
+            font-weight: 600;
             padding: 12px;
             &:hover {
                 background-color: rgba(0, 0, 0, 0.08);
@@ -185,10 +254,74 @@ const CommunityCard = styled.div`
 			}
         }
 
+		&:nth-child(2) {
+            &:hover {
+              transform: translateY(2px);
+				${PodcastCard1} {
+					align-items: center;
+					display: flex;
+					justify-content: center;
+				}
+			}
+        }
+
+		&:nth-child(3) {
+            &:hover {
+              transform: translateY(2px);
+				${PodcastCard2} {
+					align-items: center;
+					display: flex;
+					justify-content: center;
+				}
+			}
+        }
+
+		&:nth-child(4) {
+            &:hover {
+              transform: translateY(2px);
+				${PodcastCard3} {
+					align-items: center;
+					display: flex;
+					justify-content: center;
+				}
+			}
+        }
+
+		&:nth-child(5) {
+            &:hover {
+              transform: translateY(2px);
+				${PodcastCard4} {
+					align-items: center;
+					display: flex;
+					justify-content: center;
+				}
+			}
+        }
+
+		&:nth-child(6) {
+            &:hover {
+              transform: translateY(2px);
+				${PodcastCard5} {
+					align-items: center;
+					display: flex;
+					justify-content: center;
+				}
+			}
+        }
+
         &:last-child {
             padding-bottom: 12px;
+            &:hover {
+              transform: translateY(2px);
+              ${PodcastCard6} {
+                align-items: center;
+                display: flex;
+                justify-content: center;
+              }
+            }
         }
     }
 `;
 
 export default Rightside;
+

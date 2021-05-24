@@ -129,7 +129,7 @@ const Search = styled.div`
             background-color: #eef3f8;
             border-radius: 2px;
             color: rgba(0, 0, 0, 0.9);
-            width: 340px;
+            width: 360px;
             padding: 0 8px 0 40px;
             line-height: 1.75;
             font-weight: 400;
@@ -137,6 +137,12 @@ const Search = styled.div`
             height: 34px;
             border-color: #dce6f1;
             vertical-align: text-top;
+            @media (max-width: 933px) {
+                width: 200px;
+            }
+            @media (max-width: 768px) {
+                width: 330px;
+            }
         }
     }
 `;
@@ -184,7 +190,6 @@ const NavListWrap = styled.ul`
             transition: transform 0.2s ease-in-out;
             width: 100%;
             border-color: rgba(0, 0, 0, 0.9);
-
         }
     }
 `;
@@ -209,6 +214,19 @@ const NavList = styled.li`
             color: rgba(0, 0, 0, 0.6);
             display: flex;
             align-items: center;
+        }
+        &:hover {
+            span:after {
+            content: '';
+            transform: scaleX(1);
+            border-bottom: 4px solid var(--white, #fff);
+            bottom: 0;
+            left: 0;
+            position: absolute;
+            transition: transform 0.2s ease-in-out;
+            width: 100%;
+            border-color: rgba(0, 0, 0, 0.6);
+        }
         }
         
     }

@@ -44,20 +44,20 @@ const Main = (props) => {
             </div>
             <div >
                 <button>
-                    <img src="/images/assetgallery.svg" alt="" />
-                    <span>Photo</span>
+                    <img onClick={handleClick} disabled={props.loading ? true: false}  src="/images/assetgallery.svg" alt="" />
+                    <span onClick={handleClick} disabled={props.loading ? true: false} >Photo</span>
                 </button>
                 <button>
-                <img src="/images/assetvideo.svg" alt="" />
-                    <span>Video</span>
+                <img onClick={handleClick} disabled={props.loading ? true: false}  src="/images/assetvideo.svg" alt="" />
+                    <span onClick={handleClick} disabled={props.loading ? true: false} >Video</span>
                 </button>
                 <button>
-                    <img src="/images/assetcrypto.svg" alt="" />
-                    <span>Crypto</span>
+                    <img onClick={handleClick} disabled={props.loading ? true: false}  src="/images/assetcrypto.svg" alt="" />
+                    <span onClick={handleClick} disabled={props.loading ? true: false} >Crypto</span>
                 </button>
                 <button>
-                    <img src="/images/assetcode.svg" alt="" />
-                    <span>Snippets</span>
+                    <img onClick={handleClick} disabled={props.loading ? true: false}  src="/images/assetcode.svg" alt="" />
+                    <span onClick={handleClick} disabled={props.loading ? true: false} >Snippets</span>
                 </button>
             </div>
         </ShareBox>
@@ -201,12 +201,21 @@ const ShareBox = styled(CommonCard)`
             padding-bottom: 4px;
 
             button {
+                &:hover {
+                        cursor: pointer;
+                }
                 img {
                     margin: 0 4px 0 -2px;
+                    &:hover {
+                        cursor: pointer;
+                    }
                 }
                 span {
                     margin-left: 2px;
                     color: #70b5f9;
+                    &:hover {
+                        cursor: pointer;
+                    }
                 }
             }
 
@@ -352,6 +361,7 @@ const SocialActions = styled.div`
         width: 40px;
         height: 40px;
         color: #0a66c2;
+        cursor: pointer;
         @media(min-width: 768px) {
             span {
                 margin-left: 8px;

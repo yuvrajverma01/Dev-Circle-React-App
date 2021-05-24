@@ -15,7 +15,7 @@ const PostModal = (props) => {
     const handleChange = (e) => {
         const image = e.target.files[0];
 
-        if (image === '' || image === undefined) {
+        if (!image.name.match(/\.(jpg|jpeg|png|gif)$/)) {
             alert(`Not a valid image file. The file type ${typeof image} is not supported.`);
             return;
         }
@@ -44,8 +44,18 @@ const PostModal = (props) => {
             timestamp: firebase.firestore.Timestamp.now(),
         }
 
-        props.postArticle(payload);
-        reset(e);
+        if(!payload.image) {
+            if(payload.video) {
+                props.postArticle(payload);
+                reset(e);
+            } else {
+                alert(`Would you care to upload an image/link rather then testing the website?`);
+                return;
+            }
+        } else {
+            props.postArticle(payload);
+            reset(e);
+        } 
     };
 
     const reset = (e) => {
@@ -106,22 +116,24 @@ const PostModal = (props) => {
                 <SharedCreation>
                     <AttachAsset>
                         <AssetButton onClick={() => switchAssetArea("image")} >
-                            <img src="/images/actionsplus.svg" alt="" />
+                            <img src="/images/assetgallery.svg" alt="" />
                         </AssetButton>
                         <AssetButton onClick={() => switchAssetArea("media")} >
-                            <img src="/images/actionsvideo.svg" alt="" />
+                            <img src="/images/assetvideo.svg" alt="" />
                         </AssetButton>
                         <AssetButton>
-                            <img src="/images/actionsnotes.svg" alt="" />
+                            <img src="/images/nav-messaging.svg" alt="" />
                         </AssetButton>
                     </AttachAsset>
                     <SharedComment>
                         <AssetButton>
-                            <img src="/images/comments.svg" alt="" />
-                            Anyone
+                            <img src="/images/nav-network.svg" alt="" />
+                            Tag people
                         </AssetButton>
                     </SharedComment>
-                    <PostButton disabled={!editorText ? true : false} onClick={(event) => postArticle(event)} >
+                    <PostButton
+                        disabled={!editorText ? true : false} 
+                        onClick={(event) => postArticle(event)} >
                         Post
                     </PostButton>
                 </SharedCreation>
@@ -221,17 +233,24 @@ const UserInfo = styled.div`
 const SharedCreation = styled.div`
     display: flex;
     justify-content: space-between;
-    padding: 12px 24px 12px 16px;
+    padding: 12px 24px 12px 35px;
 `;
 
 const AssetButton = styled.button`
     display: flex;
     align-items: center;
+    background: transparent;
     height: 40px;
     min-width: auto;
     color: rgba(0, 0, 0, 0.5);
     border: none;
     margin-right: 10px;
+    &:hover {
+        background: lightgray;
+        border-radius: 5px;
+        color: rgba(0, 0, 0, 1);
+        cursor: pointer;
+    }
 `;
 
 const AttachAsset = styled.div`
@@ -240,7 +259,6 @@ const AttachAsset = styled.div`
     padding-right: 8px;
     ${AssetButton} {
         width: 40px;
-
     }
 `;
 
@@ -276,11 +294,20 @@ const Editor = styled.div`
         resize: none;
         overflow-y: hidden;
         padding: 6px;
+        border: none;
         input {
             width: 100%;
             height: 35px;
             font-size: 16px;
             margin-bottom: 20px;
+        }
+    }
+    div > input {
+        padding: 4px;
+        border-radius: 5px;
+        &:hover {
+        box-shadow: 6px 6px 10px -4px rgba(0,0,0,0.57);
+        cursor: pointer;
         }
     }
 `;
@@ -290,6 +317,13 @@ const UploadImage = styled.div`
     padding-top: 10px;
     p > label {
         cursor: pointer;
+        &:hover {
+        background: lightgray;
+        padding: 10px;
+        border-radius: 5px;
+        color: rgba(0, 0, 0, 1);
+        cursor: pointer;
+        }
     }
     img {
         padding-top: 10px;
