@@ -1,8 +1,18 @@
-# Dev Circle Web App
+<div align="center">
+
+![Forks](https://img.shields.io/github/forks/yuvrajverma01/Dev-Circle-React-App?logo=GITHUB&style=for-the-badge)
+[![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-blue.svg?style=for-the-badge)](https://github.com/yuvrajverma01/Dev-Circle-React-App)
+[![Stargazers](https://img.shields.io/github/stars/yuvrajverma01/Dev-Circle-React-App?logo=github&style=for-the-badge)](https://github.com/yuvrajverma01/Dev-Circle-React-App/stargazers)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/yuvrajverma01/)
+[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/yuvrajverma01)
+
+ # Dev Circle Web App
+  
+</div>
 
 It's a social media app made with React.js + Redux + Styled Components and integrating it with Firebase. This project was made with the help of Rafeh Qazi (Clever Programmer)
 
-## About This Project
+## 🤷🏼‍♂️ About This Project
 
 (Click on the image below for live demo) <br></br>
 [![Screen Shot](/public/screenshot.png)](https://devcircleapp.web.app/)
@@ -17,9 +27,9 @@ Here's why:
 
 This project was taught by the [Clever Programmer's Team](https://www.cleverprogrammer.com/) on [YouTube](https://www.youtube.com/channel/UCqrILQNl5Ed9Dz6CGMyvMTQ). The way he creates his project repos (they are incomplete) so that the actual learning takes by implementing rather than copying is truly remarkable. :blush:
 
-### Built With
+## ⚡ TechStack Used
 
-This section lists all the technologies that I used to built this project. Leave any add-ons/plugins for the acknowledgements section.
+This section lists all the technologies that I used to built this project.
 
 - [React.js](https://reactjs.org/)
 - [Redux](https://redux.js.org/)
@@ -27,9 +37,7 @@ This section lists all the technologies that I used to built this project. Leave
 - [ReactPlayer](https://www.npmjs.com/package/react-player)
 - [Firebase](https://firebase.google.com/)
 
-## Getting Started
-
-To get a local copy or a [live demo](https://devcircleapp.web.app/) up and running follow these simple example steps.
+## 🚀 Getting Started
 
 ### Prerequisites
 
@@ -93,9 +101,9 @@ $ npm install firebase
 $ npm install firebase-tools
 ```
 
-## Roadmap
+## 📁 File Structure
 
-There are total 7 Main Components and API's amdin actionType.js and the directory structure of the project is given below:
+The file structure of the current project is structured as shown below:
 
 ```
 my-app
@@ -136,10 +144,12 @@ my-app
 
 ```
 
-## Contact
-
-<h3> Hey! I'm Yuvraj. ✌️</h3>
-
+## ❤  About Me
+Made with ❤  by [Yuvraj Verma.](https://www.linkedin.com/in/yuvrajverma01/)
+<br><br>
+<a href="mailto:vermay87gmail.com">
+  <img align="left" alt="Yuvraj's Email" width="22px" src="https://cdn4.iconfinder.com/data/icons/social-media-2070/140/_unread_email-512.png" />
+</a>
 <a href="https://www.linkedin.com/in/yuvrajverma01/">
   <img align="left" alt="Yuvraj's LinkdeIN" width="22px" src="https://cdn4.iconfinder.com/data/icons/social-media-2070/140/_linkedin-512.png" />
 </a>
@@ -152,9 +162,3 @@ my-app
 <a href="https://twitter.com/01_barfi">
   <img align="left" alt="Yuvraj's Twitter" width="22px" src="https://cdn4.iconfinder.com/data/icons/social-media-2070/140/_twitter-512.png" />
 </a>
-<br>
-
-- 🎓 Currently pursuing Computer Science Engineering (Sophomore)
-- 👨‍💻 Python developer and front-end web developer.
-- 🌱 Enthusiast in Cyber Security and Machine Learning
-- 🏃‍♂️ About to document my journey on [YouTube](https://www.youtube.com/watch?v=3jEZnZD6phQ&t=0s)
